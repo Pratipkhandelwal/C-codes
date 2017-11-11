@@ -1,0 +1,61 @@
+#include<stdio.h>
+
+int main()
+{
+	long long int t,k,arr[100000],sum=0,pos=0,i,n,j;
+	scanf("%lld",&t);
+	while(t-->0)
+	{
+		scanf("%lld",&k);
+		for(i=0;i<7;i++)
+		{
+			scanf("%lld",&arr[i]);
+		}
+		sum=0;pos=0;
+		char[] day={"MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"};
+		for(i=0;i<7;i++)
+		{
+			sum=sum+arr[i];
+			if(sum==k)
+			{
+			pos=i;
+			break;	
+			}
+            else
+            {
+            	continue;
+			}
+	}
+		}
+		printf("%c",char[pos]);
+		if(pos==0)
+		{
+			printf("MONDAY\n");
+		}
+				if(pos==1)
+		{
+			printf("TUESDAY\n");
+		}
+				if(pos==2)
+		{
+			printf("WEDNESDAY\n");
+		}
+				if(pos==3)
+		{
+			printf("THURSDAY\n");
+		}
+				if(pos==4)
+		{
+			printf("FRIDAY\n");
+		}
+				if(pos==5)
+		{
+			printf("SATURDAY\n");
+		}
+				if(pos==6)
+		{
+			printf("SUNDAY\n");
+		}
+}
+return 0;
+}
